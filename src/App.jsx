@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
 import AuthModal from './components/AuthModal';
+import MobileBottomNav from './components/MobileBottomNav';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -45,6 +46,9 @@ function StoreLayout({ children }) {
         {children}
       </main>
       <Footer />
+
+      {/* Mobile Sticky Bottom App Navigation */}
+      <MobileBottomNav />
 
       {/* Global Slide-over Bag Drawer */}
       <CartDrawer />
